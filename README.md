@@ -1,2 +1,1 @@
-# compilacionbackendstaffitendocker
-compilacion del backend de staffit en docker
+# Habrá que sustituir el nombre de la imagen por la propia en el Dockerfile
