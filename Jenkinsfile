@@ -8,8 +8,9 @@ pipeline {
      stage('CREACIÓN DEL SERVICIO/IMAGEN') {
       steps{
 	sh('docker tag  imagen14 backend-develop/maven')
-	sh('docker run -d backend-develop/maven tail -f /dev/null')
+	sh('docker run backend-develop/maven')
       }
     }
   }
 }
+# Habrá que sustituir el nombre de la imagen por la propia
