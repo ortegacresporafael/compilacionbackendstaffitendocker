@@ -16,7 +16,7 @@ WORKDIR /backend
 #Cambio a la rama develop, ya que la rama por defecto es la master
 RUN git checkout develop
 
-#Cambio de directorio para ejecutar el comando que compila
+#Cambio de directorio para ejecutar el comando que compila y guarda la compilación de los distintos módulos en un volumen
 WORKDIR /backend/microservices/java
 
 CMD sh -c "mvn package; cp -r /backend/microservices/java /myvol"
